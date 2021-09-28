@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+
+body {
+    background: radial-gradient(500px at 47% 54%, #FFFFFF 0%, #030923 100%);
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    font-size: 2em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+header a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #ffb76c;
+}
+
+header ul {
+    display: contents;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #616161;
+}
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
