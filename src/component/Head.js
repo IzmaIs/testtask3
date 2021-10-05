@@ -1,6 +1,6 @@
 import React from "react";
 import {Navs} from "./Navs";
-import Styles from "../styles/Styles.css";
+import "../styles/Styles.css";
 
 
 export const Head = () => (

@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
 
-body {
-    background: radial-gradient(500px at 47% 54%, #FFFFFF 0%, #030923 100%);
-    width: 100vw;
-    height: 100vh;
-}
-
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     font-size: 2em;
     flex-direction: row;

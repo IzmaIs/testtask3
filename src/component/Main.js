@@ -1,18 +1,27 @@
-import React from "react";
+import React, {useRef, useState} from "react";
 import {InfoBlocks} from "./InfoBlocks";
-import main from "../styles/main.css";
+import "../styles/main.css";
 
-export const Main = () => (
-    <main>
-        {InfoBlocks.map((InfoBlock) =>
+export const Main = () => {
+    return (
+        <main>
             <div className="versus-items">
-                <div>
-                    <p key={InfoBlock.versus1}>{InfoBlock.versus1}</p>
+                <div className="werh">
+                    <div className="triangle-top">
+                        <p>123</p>
+                    </div>
                 </div>
-                <div>
-                    <p key={InfoBlock.versus2}>{InfoBlock.versus2}</p>
+                <div className="sentr">
+                    <div className="hexagon">
+                        <p>123</p>
+                    </div>
+                </div>
+                <div className="niz">
+                    <div className="triangle-bottom">
+                        <p>123</p>
+                    </div>
                 </div>
             </div>
-        )}
-    </main>
-)
+        </main>
+    )
+}
