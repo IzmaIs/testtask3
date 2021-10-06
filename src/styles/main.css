@@ -41,22 +41,23 @@ main {
     display: flex;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 20px;
-    -webkit-transform: skew(155deg);
-    -moz-transform: skew(20deg);
-    -o-transform: skew(20deg);
     background: blue;
 }
 .triangle-top p {
     transform: skew(-150deg);
 }
 
+#triangle-topleft {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-left: 100px solid red;
+    border-bottom: 50px solid transparent;
+}
+
 .triangle-bottom {
     height: 152px;
     display: flex;
-    -webkit-transform: skew(
-            156deg);
-    -moz-transform: skew(20deg);
-    -o-transform: skew(20deg);
     background: blue;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 20px;
@@ -68,37 +69,33 @@ main {
     transform: skew(-156deg);
 }
 
-.hexagon {
-    width: 205px;
-    height: 304px;
+.roundHex {
+    position:relative;
     background: red;
-    position: relative;
+    border-radius:14px;
+    height:320px;
+    width:192px;
+    z-index: 444;
+    overflow-wrap: break-word;
 }
-.hexagon:before {
-    transform: rotate(-90deg);
-    content: "";
-    position: absolute;
-    top: 117px;
-    left: -187px;
-    width: 0;
-    height: 0;
-    border-left: 152px solid transparent;
-    border-right: 152px solid transparent;
-    border-bottom: 70px solid red;
+.roundHex:before, .roundHex:after {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    background:inherit;
+    border-radius:inherit;
+    height:100%;
+    width:100%;
+    z-index: -1;
 }
-.hexagon:after {
-    transform: rotate(90deg);
-    content: "";
-    position: absolute;
-    top: 117px;
-    left: 88px;
-    width: 0;
-    height: 0;
-    border-left: 152px solid transparent;
-    border-right: 152px solid transparent;
-    border-bottom: 70px solid red;
+.roundHex:before {
+    -webkit-transform:rotate(60deg);
+    -moz-transform:rotate(60deg);
+    transform:rotate(60deg);
 }
-
-.hexagon p {
-    margin: 0;
+.roundHex:after {
+    -webkit-transform:rotate(-60deg);
+    -moz-transform:rotate(-60deg);
+    transform:rotate(-60deg);
 }

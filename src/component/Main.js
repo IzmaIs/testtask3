@@ -12,7 +12,7 @@ export const Main = () => {
                     </div>
                 </div>
                 <div className="sentr">
-                    <div className="hexagon">
+                    <div className="roundHex">
                         <p>123</p>
                     </div>
                 </div>
