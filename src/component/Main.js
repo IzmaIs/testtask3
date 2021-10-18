@@ -11,7 +11,7 @@ export const Main = () => {
     return (
         <main>
             <div className="hex-cont">
-                <Hexagon className={`roundHex hexagon_0 ${isActive ? "active" : ""}`} onClick={handleToggle}/>
+                <Hexagon/>
                 <div className="circle_1">
                     <div className={`roundHex hexagon_1 ${isActive ? "active" : ""}`} onClick={handleToggle}>
                     </div>
@@ -19,7 +19,7 @@ export const Main = () => {
                     </div>
                 </div>
                 <div className="circle_2">
-                    <div className="roundHex hexagon_2">
+                    <div className={`roundHex hexagon_2 ${isActive ? "active" : ""}`} onClick={handleToggle}>
                     </div>
                     <div className="roundHex hexagon_-2">
                     </div>

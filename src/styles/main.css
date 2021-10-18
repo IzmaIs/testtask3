@@ -14,13 +14,6 @@ body {
     background: #FFF;
     border-radius:14px;
 }
-
-.roundHex span {
-    position: absolute;
-    font-family: serif;
-    color: #123456;
-}
-
 .roundHex:before, .roundHex:after {
     content:"";
     position:absolute;
@@ -44,7 +37,6 @@ body {
 }
 
 .circle_1, .circle_2 {
-    z-index: -1;
     position: absolute;
     width: 36vw;
     height: 36vw;
@@ -71,14 +63,11 @@ body {
 }
 
 .hexagon_1, .hexagon_-1 {
-    width: 11vw;
-    height: 18vw;
+    transform: rotate(30deg);
+    width: 7vw;
+    height: 11vw;
     left: calc(50% + 18vw - 9vw / 2);
     top: calc(50% - 10.44vw / 2);
-}
-
-.circle_1 > .hexagon_-1, .hexagon_1 {
-    transform: scale(0.5) rotate(30deg);
 }
 
 .hexagon_-1 {
@@ -87,18 +76,14 @@ body {
 
 .hexagon_2, .hexagon_-2 {
     transform: rotate(30deg);
-    width: 11vw;
-    height: 18vw;
+    width: 5vw;
+    height: 7.6vw;
     left: calc(50% + 30vw - 5.5vw / 2);
     top: calc(50% - 6.96vw / 2);
 }
 
 .hexagon_-2 {
     left: calc(-4.5vw / 2);
-}
-
-.circle_2 > .hexagon_-2, .hexagon_2 {
-    transform: scale(0.5) rotate(30deg);
 }
 
 .roundHex > div {
