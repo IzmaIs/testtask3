@@ -44,6 +44,7 @@ body {
 }
 
 .circle_1, .circle_2 {
+    z-index: -1;
     position: absolute;
     width: 36vw;
     height: 36vw;
