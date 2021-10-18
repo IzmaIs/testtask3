@@ -1,4 +1,4 @@
-import React, {useRef, useState} from "react";
+import React, {useState} from "react";
 import {InfoBlocks} from "./InfoBlocks";
 import "../styles/main.css";
 import {Hexogon} from "./Hexogon";
