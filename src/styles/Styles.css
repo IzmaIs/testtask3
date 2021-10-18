@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
 
 header {
+    z-index: 1;
     position: fixed;
     top: 0;
     left: 0;

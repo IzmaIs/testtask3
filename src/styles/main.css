@@ -1,83 +1,26 @@
-main {
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-.werh:nth-child(1) {
-    margin-right: 3%;
-    height: 152px;
-    z-index: 3;
-    align-self: flex-start;
-    flex: 1 1 auto;
-}
-
-.sentr:nth-child(2) {
-    align-self: center;
-    flex: 0 1 auto;
-}
-
-.niz:nth-child(3) {
-    margin-left: 3%;
-    height: 152px;
-    align-self: flex-end;
-    flex: 1 1 auto;
-}
-
-.versus-items {
-    display: flex;
-    color: #FFFFFF;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-}
-
-.triangle-top {
-    z-index: 3;
-    height: 152px;
-    display: flex;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 20px;
-    background: blue;
-}
-.triangle-top p {
-    transform: skew(-150deg);
-}
-
-#triangle-topleft {
-    width: 0;
-    height: 0;
-    border-top: 50px solid transparent;
-    border-left: 100px solid red;
-    border-bottom: 50px solid transparent;
-}
-
-.triangle-bottom {
-    height: 152px;
-    display: flex;
-    background: blue;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-.triangle-bottom p {
-    transform: skew(-156deg);
+.hex-cont {
+    position: relative;
 }
 
 .roundHex {
-    position:relative;
-    background: red;
+    box-shadow: 5px 5px 34px 5px rgba(0,0,0,0.71);
+    position: absolute;
+    background: #FFF;
     border-radius:14px;
-    height:320px;
-    width:192px;
-    z-index: 444;
-    overflow-wrap: break-word;
 }
+
+.roundHex span {
+    position: absolute;
+    font-family: serif;
+    color: #123456;
+}
+
 .roundHex:before, .roundHex:after {
     content:"";
     position:absolute;
@@ -98,4 +41,88 @@ main {
     -webkit-transform:rotate(-60deg);
     -moz-transform:rotate(-60deg);
     transform:rotate(-60deg);
+}
+
+.circle_1, .circle_2 {
+    position: absolute;
+    width: 36vw;
+    height: 36vw;
+    border: 1px solid #575a83;
+    border-radius: 50%;
+    left: calc(50vw - 36vw / 2);
+    top: calc(50vh - 36vw / 2);
+    transform: rotate(-30deg);
+}
+
+.circle_2 {
+    width: 60vw;
+    height: 60vw;
+    left: calc(50% - 60vw / 2);
+    top: calc(50vh - 60vw / 2);
+}
+
+.hexagon_0 {
+    width: 11vw;
+    height: 18vw;
+    left: calc(50vw - 11vw / 2);
+    top: calc(50vh - 17.4vw / 2);
+    transform: rotate(0deg);
+}
+
+.hexagon_1, .hexagon_-1 {
+    width: 11vw;
+    height: 18vw;
+    left: calc(50% + 18vw - 9vw / 2);
+    top: calc(50% - 10.44vw / 2);
+}
+
+.circle_1 > .hexagon_-1, .hexagon_1 {
+    transform: scale(0.5) rotate(30deg);
+}
+
+.hexagon_-1 {
+    left: calc(-4.5vw / 2);
+}
+
+.hexagon_2, .hexagon_-2 {
+    transform: rotate(30deg);
+    width: 11vw;
+    height: 18vw;
+    left: calc(50% + 30vw - 5.5vw / 2);
+    top: calc(50% - 6.96vw / 2);
+}
+
+.hexagon_-2 {
+    left: calc(-4.5vw / 2);
+}
+
+.circle_2 > .hexagon_-2, .hexagon_2 {
+    transform: scale(0.5) rotate(30deg);
+}
+
+.roundHex > div {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 25%;
+    border-radius: 10%;
+    background-color: #FFF;
+}
+
+.line_1, .line_2 {
+    box-shadow: 5px 5px 10px 4px rgba(0,0,0,0.46);
+    width: calc(50%);
+    height: calc(17.4vw / 2);
+    position: absolute;
+    top: calc(50vh - 17.4vw / 2);
+    transform: skew(-30deg);
+    background-color: #FFF;
+    border-radius: 10px;
+}
+.line_1 {
+    left: -9vw;
+}
+.line_2 {
+    right: -9vw;
+    top: calc(50vh);
 }
