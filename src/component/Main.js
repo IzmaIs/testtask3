@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {InfoBlocks} from "./InfoBlocks";
 import "../styles/main.css";
-import {Hexogon} from "./Hexogon";
+import {Hexagon} from "./Hexogon";
 
 export const Main = () => {
     const [isActive, setActive] = useState(false);
@@ -11,7 +11,7 @@ export const Main = () => {
     return (
         <main>
             <div className="hex-cont">
-                <Hexogon/>
+                <Hexagon/>
                 <div className="circle_1">
                     <div className="roundHex hexagon_1">
                     </div>
@@ -24,8 +24,8 @@ export const Main = () => {
                     <div className="roundHex hexagon_-2">
                     </div>
                 </div>
-                <div className="line_1"></div>
-                <div className="line_2"></div>
+                <div className="line_1"/>
+                <div className="line_2"/>
             </div>
         </main>
     )

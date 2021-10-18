@@ -14,7 +14,7 @@ export const Head = () => (
             )}
         </ul>
             <label className="menu__btn" htmlFor="menu__toggle">
-                <span></span>
+                <span/>
             </label>
     </header>
 )
