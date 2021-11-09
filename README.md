@@ -1,3 +1,10 @@
+Тестовое задание, не закончено, нужно было сделать гексагоны, их движение по диагонали при клике или прокрутке колеса, соответственно должна была отображаться выбранная информация. В боковых палка написаны противники, на неактивных гексагонах даты, на активном полная информация.
+
+# Демо: https://clck.ru/Yj4gw
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
